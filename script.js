@@ -1,12 +1,11 @@
-document.onkeydown = (event)=>{
+$(document).on('keydown',(event)=>{
     switch(event.code){
-        case 'ArrowUp':
-        case 'ArrowDown':
-        case 'ArrowRight':
-        case 'ArrowLeft': {
-            alert ('key code = '+event.code);
-            console.log('press');
+        case "ArrowUp":
+        case "ArrowDown":
+        case "ArrowLeft":
+        case "ArrowRight":{
+            alert("key  code = "+event.code);
             break;
         }
     }
-}
+});
